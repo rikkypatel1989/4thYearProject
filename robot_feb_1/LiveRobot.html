@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<link href="styles/main.css" rel="stylesheet" type="text/css">
+	<link href="scripts/function.js" type="text/javascript">
+	<title>Live Robot</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scripts/jquery_function.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<header id="pageTitle">
+		<h1>Internet Live Robot</h1>
+		<nav id="mainNavigator">
+			<ul>
+				<li><a href="LiveRobot.html" class="thispage">Home</a></li>
+				<li><a href="AboutProject.html">About</a></li>
+				<li><a href="ProjectTeam.html">Team</a></li>
+				<li><a href="ContactRobot.html">Contact</a></li>
+			</ul>
+		</nav>
+		</header>
+	</div>
+	<div id="main">
+		<div id="robotNav" align="center">
+			<p>
+            	<button type="button" onclick="ButtonForward()" id="ButtonForward" class="ButtonForward" >Straight</button>
+			</p>
+			<p>
+				<button type="button" onclick="ButtonLeft()" id="ButtonLeft" class="ButtonLeft">Left</button>
+				<button type="button" onclick="ButtonRight()" id="ButtonRight" class="ButtonRight">Right</button>
+			</p>
+			<p>
+				<button type="button" onclick="ButtonBackward()" id="ButtonBackward" class="ButtonBackward">Stop</button>
+			</p>
+	</div>
+
+	<div id="robotUpdates"> 
+		<section class="floatright" id="camera">
+			<figure class="centered" id="liveImage">
+				<img src="images/smile.jpg"  alt="" class="update" id="camerasnaps"/>
+				<figcaption>Live Image From Mobile Robot Boat</figcaption>
+			</figure>
+		</section>
+		<section class="floatleft" id="details">
+			<h2>Surrounding Detail</h2>
+			<p class="update">
+           Gyro<br><br><br>Distance
+           Compass<br><br><br>GPS
+           Temperature<br><br><br>Pressure
+           Altitude<br><br><br></p>
+		</section>
+	</div>
+	<footer id="foot">
+		<p>© 2014 Carleton University</p>
+	</footer>
+</body>
+</html>
